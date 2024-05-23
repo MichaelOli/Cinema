@@ -21,49 +21,52 @@ print('Sala 3: Poeira em alto mar.\n Classificação indicativa: 12 anos')
 print('Sala 4: As tranças do rei careca.\n  Classificação indicativa: 16 anos')
 print('Sala 5: a vingança do peixe frito.\n Classificação indicativa: 16 anos \n')
 
+if idade <= 9:
+    print(f'{nome}, desculpe mas você não tem idade para assistir a nenhum dos filmes...')
+else:
 # recebendo a sala escolhida
-while True:
-    sala = int(input('Infrome qual a sala desejada: '))
-    match sala:
-        case 1:
-            if idade <=9:
-                print(f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+    while True:
+        sala = int(input('Infrome qual a sala desejada: '))
+        match sala:
+            case 1:
+                if idade <=9:
+                    print(f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+                    continue
+                elif idade >= 10:
+                    print(f'{nome}! O filme escolhido por você foi: A volta dos que não foram')
+                    break
+            case 2:
+                if idade <= 8:
+                    print(
+                        f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+                    continue
+                elif idade >= 8:
+                    print(f'{nome}! O filme escolhido por você foi: A roda quadrada')
+                    break
+            case 3:
+                if idade <= 12:
+                    print(
+                        f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+                    continue
+                elif idade >= 12:
+                    print(f'{nome}! O filme escolhido por você foi: Poeira em alto mar')
+                    break
+            case 4:
+                if idade <= 16:
+                    print(
+                        f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+                    continue
+                elif idade >= 16:
+                    print(f'{nome}! O filme escolhido por você foi: As tranças do rei careca')
+                    break
+            case 5:
+                if idade <= 16:
+                    print(
+                        f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
+                    continue
+                elif idade >= 16:
+                    print(f'{nome}! O filme escolhido por você foi: a vingança do peixe frito')
+                    break
+            case _:
+                print('Sala inexistente.')
                 continue
-            elif idade >= 10:
-                print(f'{nome}! O filme escolhido por você foi: A volta dos que não foram')
-                break
-        case 2:
-            if idade <= 8:
-                print(
-                    f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
-                continue
-            elif idade >= 8:
-                print(f'{nome}! O filme escolhido por você foi: A roda quadrada')
-                break
-        case 3:
-            if idade <= 12:
-                print(
-                    f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
-                continue
-            elif idade >= 12:
-                print(f'{nome}! O filme escolhido por você foi: Poeira em alto mar')
-                break
-        case 4:
-            if idade <= 16:
-                print(
-                    f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
-                continue
-            elif idade >= 16:
-                print(f'{nome}! O filme escolhido por você foi: As tranças do rei careca')
-                break
-        case 5:
-            if idade <= 16:
-                print(
-                    f'{nome}! você não possui idade o suficiente para assistir a esse filme. Por favor escolha novamente uma sala')
-                continue
-            elif idade >= 16:
-                print(f'{nome}! O filme escolhido por você foi: a vingança do peixe frito')
-                break
-        case _:
-            print('Sala inexistente.')
-            continue
