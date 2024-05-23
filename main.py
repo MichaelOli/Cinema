@@ -22,7 +22,7 @@ print('Sala 4: As tranças do rei careca.\n  Classificação indicativa: 16 anos
 print('Sala 5: a vingança do peixe frito.\n Classificação indicativa: 16 anos \n')
 
 #verifica se ele tem idade para assistir algum filme
-if idade <= 9:
+if idade <= 7:
     print(f'{nome}, desculpe mas você não tem idade para assistir a nenhum dos filmes...')
 else:
 # recebendo a sala escolhida
