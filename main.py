@@ -69,5 +69,18 @@ else:
                     print(f'{nome}! O filme escolhido por você foi: a vingança do peixe frito')
                     break
             case _:
-                print('Sala inexistente.')
-                continue
+                print('Sala inexistente.\n')
+
+     # Perguntar ao cliente se ele deseja continuar ou encerrar o programa.
+while True:
+    continuar = str(
+        input('Deseja continuar? (Digite para "s" SIM ou n "para" NÃO)'))
+    match continuar:
+        case 's':
+            continue
+        case 'n':
+            break
+        case _:
+            print('Por favor escolha uma opção válida.')
+            continue
+    
